@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./index.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    
+    <h1 class=" text-2xl font-bold pb-6  text-center font-serif">Language Translator</h1>
+    
+   
+    <div class="flex mx-auto  flex-col">
+        <div class="flex mx-auto justify-between w-4/12">
+            <select id="fromoption" onchange="myFunction()"  class="border border-gray-300 outline-none w-24   h-auto p-2">
+                <option value="en" >English</option>
+                <option value="ta" >Tamil</option>
+                <option value="te" >Telugu</option>
+                <option value="fr" >French</option>
+            </select>
+            <div>
+                <i class="fa fa-arrows-h" style="font-size:36px"></i>
+            </div>
+            <select id="tooption" onchange="myFunction()"  class="border border-gray-300 outline-none w-24  h-auto p-2">
+                <option value="en" >English</option>
+                <option value="ta" >Tamil</option>
+                <option value="te" >Telugu</option>
+                <option value="fr" >French</option>
+            </select>
+
+        </div>
+
+        <div>
+            <input type="text" 
+            placeholder="Enter a text here.."
+            id="input_text"
+            oninput="textSubmit()"
+            class="border-b-2 border-fuchsia-600 outline-none bg-red-100 
+            flex mx-auto w-3/6 px-2 my-4">
+        </div>
+
+        <div id="result" class=" w-3/6 flex m-auto " > </div>
+
+    </div>
+    <script src="./index.js" type="text/javascript"></script>
+</body>
+</html>
